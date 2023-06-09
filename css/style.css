@@ -1,0 +1,413 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2 {
+  font-family: "Arima Madurai", cursive;
+}
+
+h3,
+p,
+a {
+  font-family: "Mulish", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: auto;
+  width: 95%;
+  padding-top: 8%;
+}
+
+.orange {
+  color: #ff8e25;
+}
+
+.rojo {
+  color: rgb(226, 34, 34);
+}
+
+.azul {
+  color: #104088;
+}
+
+.pie-pagina {
+  margin-top: 5rem;
+  background-color: rgb(20, 20, 20);
+  padding: 5rem;
+}
+.pie-pagina .contenedor-piepagina {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pie-pagina .contenedor-piepagina .info {
+  flex: 0 0 calc(25% - 1rem);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.pie-pagina .contenedor-piepagina .info h3,
+.pie-pagina .contenedor-piepagina .info p {
+  color: #fff;
+  text-align: center;
+}
+.pie-pagina .contenedor-piepagina .info h3 {
+  font-size: 2.2rem;
+}
+.pie-pagina .contenedor-piepagina .info p {
+  font-size: 1.8rem;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+nav {
+  color: #fff;
+}
+nav .logo h2 {
+  font-size: 3rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding: 1.5rem;
+  padding-left: 4rem;
+  display: block;
+  transition: color 0.5s;
+  text-align: center;
+  text-align: left;
+}
+nav ul li a:hover {
+  color: #104088;
+}
+nav ul li:nth-child(odd) a:hover {
+  color: rgb(226, 34, 34);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+html body .separador {
+  color: #fff;
+  background-image: url("../assets/img/holand.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+html body .separador::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+html body .separador .contenido-separador {
+  padding: 5rem;
+}
+html body .separador .contenido-separador h2 {
+  font-size: 5rem;
+  color: #fff;
+  text-align: left;
+}
+html body .separador .contenido-separador p {
+  color: var(--blanco);
+  font-size: 3rem;
+  text-align: left;
+}
+
+/*formulario contacto*/
+.formulario-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-content: space-evenly;
+}
+.formulario-contacto .informacion-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #585858;
+  padding: 2rem;
+  color: #fff;
+}
+.formulario-contacto .informacion-contacto h3 {
+  font-size: 4rem;
+  font-family: "Arima Madurai", cursive;
+}
+.formulario-contacto .informacion-contacto p {
+  font-size: 2.2rem;
+}
+.formulario-contacto .informacion-contacto i {
+  margin-right: 1rem;
+}
+.formulario-contacto .redes-sociales {
+  font-size: 3rem;
+}
+
+.formulario {
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+.formulario .input-formulario input {
+  width: 100%;
+  padding: 1rem 1.6rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Mulish", sans-serif;
+}
+.formulario .input-formulario textarea {
+  @exted;
+}
+
+.input-formulario input,
+.input-formulario textarea {
+  width: 100%;
+}
+
+.input-formulario input,
+.input-formulario textarea {
+  padding: 1rem 1.6rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Mulish", sans-serif;
+}
+
+.input-formulario textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  font-size: 2.2rem;
+}
+
+.btn-azul {
+  background-color: #104088;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-rojo {
+  background-color: rgb(226, 34, 34);
+  border: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: "Mulish", sans-serif;
+}
+
+.btn-rojo:hover {
+  background-color: #104088;
+}
+
+/*sobre nosotros*/
+.contenedor-nosotros {
+  padding-top: 10rem;
+}
+
+.contenedor-nosotros {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-nosotros,
+.imagenes-nosotros {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.texto-nosotros .bienvenida {
+  font-size: 4rem;
+  color: rgb(226, 34, 34);
+  text-align: center;
+}
+
+.texto-nosotros .bienvenida {
+  text-align: left;
+}
+
+.texto-nosotros h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.texto-nosotros h1 {
+  text-align: left;
+}
+
+.texto-nosotros p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.texto-nosotros p {
+  text-align: left;
+}
+
+.imagenes-nosotros {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagenes-nosotros img {
+  border-radius: 5px;
+}
+
+.imagen1,
+.imagenes2 {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.imagenes2 img {
+  margin-bottom: 1rem;
+}
+
+.menu {
+  padding-top: 8rem;
+}
+
+/*productos*/
+.texto-productos {
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+
+.botones-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.botones-productos button {
+  flex: 0 0 calc(50% - 1rem);
+  padding: 1rem 3rem;
+}
+
+.botones-productos {
+  display: inline-block;
+}
+
+.botones-productos button {
+  flex: unset;
+}
+
+@media (min-width: 768px) {
+  .productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.producto {
+  flex: 0 0 calc(33.3% - 1rem);
+  border: 1px solid #e1e1e1;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.producto h2 {
+  text-align: center;
+}
+
+.producto p {
+  font-size: 1.8rem;
+}
+
+.precio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.precio p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.precio button {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #104088;
+  color: #fff;
+  height: 3.8rem;
+}
+
+/*seccion del chef*/
+.chef h2 {
+  background-color: #104088;
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.contenido-chef {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-chef,
+.imagen-chef {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+
+
+.texto-chef h3 {
+  font-size: 3rem;
+}
+
+.texto-chef p {
+  font-size: 2rem;
+}
+
+.formulario-contacto {
+  padding-top: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
