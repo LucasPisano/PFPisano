@@ -14,9 +14,7 @@
     font-family: $parrafos;
   }
   
-  img {
-    max-width: 100%;
-  }
+ 
   .contenedor {
     max-width: 120rem;
     margin: auto;
@@ -53,6 +51,10 @@
     display: inline-block;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    &:hover {
+      color: $blanco;
+      background-color: $rojo;
+    }
   }
   .btn-rojo {
     background-color: $rojo;
@@ -60,11 +62,13 @@
     display: inline-block;
     margin-bottom: 2rem;
     font-family: $parrafos;
+    &:hover {
+      color: $blanco;
+      background-color: $azul;
+    }
+    
   }
-  .btn-rojo:hover {
-    background-color: $azul;
-  }
-  
+
   
   .menu {
     padding-top: 8rem;

@@ -39,7 +39,7 @@ html {
     .texto-nosotros {
       flex: 0 0 calc(50% - 1rem);
       .bienvenida {
-        @include texto(4rem, center);
+        @include texto(4rem, left);
         color: $rojo;
       }
       h1 {
